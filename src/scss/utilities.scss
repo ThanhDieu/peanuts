@@ -1,0 +1,78 @@
+// #region Spacing
+$offsets: (
+  top,
+  bottom,
+  left,
+  right
+);
+$breakpoints: (
+  sm: "(min-width: 576px)",
+  md: "(min-width: 768px)",
+  lg: "(min-width: 992px)",
+  xl: "(min-width: 1200px)",
+);
+
+@each $offset in $offsets {
+  @for $spacing from 10 through 60 {
+    @if $spacing >=0 {
+      .u-m#{str-slice($offset, 0, 1)}-#{$spacing} {
+        margin-#{$offset}: #{$spacing}px;
+      }
+
+      .u-p#{str-slice($offset, 0, 1)}-#{$spacing} {
+        padding-#{$offset}: #{$spacing}px;
+      }
+
+      .fs-#{$spacing} {
+        font-size: #{$spacing/10}rem;
+      }
+    }
+
+    @else {
+      .u-m#{str-slice($offset, 0, 1)}-negative#{$spacing} {
+        margin-#{$offset}: #{$spacing}px;
+      }
+    }
+  }
+}
+
+// #endregion
+
+@mixin scrollbars($size,
+  $foreground-color,
+  $background-color: mix($foreground-color, $COLOR-WHITE, 50%)) {
+
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    height: $size;
+    width: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $foreground-color;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: rem(5);
+
+    &:hover {
+      background-color: mix($foreground-color, $color-black, 70%);
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: $background-color;
+  }
+
+  // For Internet Explorer
+  scrollbar-face-color: $foreground-color;
+  scrollbar-track-color: $background-color;
+}
+
+@mixin text-overflow($number: 2) {
+  -webkit-box-orient: vertical;
+  /* stylelint-disable-line property-no-vendor-prefix */
+  display: -webkit-box;
+  /* stylelint-disable-line value-no-vendor-prefix */
+  -webkit-line-clamp: ($number);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

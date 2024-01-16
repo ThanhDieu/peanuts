@@ -1,0 +1,61 @@
+/**
+Single
+ */
+
+.tag-link {
+    span {
+        margin-left: -5px;
+    }
+
+    &:last-child {
+        span {
+            display: none;
+        }
+    }
+}
+
+.sg-image {
+    &.image-cover {
+        height: 16rem;
+    }
+
+    iframe {
+        width: 100% !important;
+    }
+
+    .sub-title {
+        top: 0;
+        left: 3rem;
+    }
+}
+
+//chi tiet bai viet
+
+.single-page {
+    .social-share {
+        .d-inline-block {
+            width: 7rem;
+        }
+    }
+}
+
+.sitemap-list {
+    h3 {
+        margin-bottom: 1rem;
+    }
+
+    li {
+        width: 33%;
+        margin-bottom: 1rem;
+
+        &:hover {
+            color: #b20000 !important;
+        }
+
+        a {
+            &:hover {
+                color: #b20000 !important;
+            }
+        }
+    }
+}

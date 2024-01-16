@@ -1,0 +1,210 @@
+/** banner */
+.bg-img-link {
+  background: url("../images/brushYellow.svg") no-repeat center;
+  background-size: cover;
+  min-width: 11rem;
+
+}
+
+.bg-img-red {
+  background: url("../images/bgRed.svg") no-repeat center;
+  background-size: cover;
+}
+
+.wave {
+  bottom: -1rem;
+  left: 0;
+  right: 0;
+}
+
+.banner-slide {
+  .item {
+    height: 80vh;
+    max-height: 55rem;
+
+    a {
+      img {
+        width: 10rem !important;
+      }
+    }
+  }
+
+  .bg-main {
+    margin-top: 3.3rem;
+    margin-bottom: 3.3rem;
+    position: relative;
+
+    &::before {
+      background: url("../images/redTopMain.svg") no-repeat center;
+      bottom: 100%;
+    }
+
+    &::after {
+      background: url("../images/redBotMain.svg") no-repeat center;
+      top: 100%;
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: 3.3rem;
+      background-size: cover;
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  &.owl-carousel {
+    .owl-dots {
+      left: 90%;
+      bottom: 11rem;
+      z-index: 99;
+      display: flex;
+
+      &.stop {
+        .owl-dot {
+          background: #f3dc8d;
+
+          &.active {
+            width: 5px;
+            background: $main;
+          }
+        }
+      }
+
+      &:not(.stop) {
+        .owl-dot {
+
+          &.active {
+            span {
+              background: $main;
+              display: inline-block;
+              height: 100%;
+              width: 0%;
+              position: absolute;
+              top: 0;
+              left: 0;
+              animation: 5s linear 0.1s infinite backwards trans2;
+            }
+          }
+        }
+      }
+    }
+
+    .owl-dot {
+      background: $main;
+      border: none;
+
+
+      &.active {
+        background: #f3dc8d91;
+        border-radius: 3px;
+        overflow: hidden;
+        transition: width 0.38s ease-out, background 0.38s ease-out;
+        width: 5rem;
+        position: relative;
+        border: none;
+      }
+    }
+  }
+}
+
+@keyframes trans2 {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.hero-control-play {
+  bottom: 10.5rem;
+  display: inline-flex;
+  height: 2rem;
+  margin-bottom: 0;
+  left: calc(90% - 5rem);
+  width: 5rem;
+  z-index: 99;
+  justify-content: center;
+  background: #ffffff24;
+  padding: 2px 4px;
+  border-radius: 2px;
+
+  &.play {
+    background: none;
+  }
+}
+
+.video-modal {
+  .btn-close {
+    background: none;
+    height: 2rem;
+    width: 2rem;
+
+    svg {
+      height: auto;
+    }
+  }
+
+  .modal-dialog {
+    max-width: 80%;
+  }
+
+  iframe {
+    width: 100%;
+    height: 80vh;
+    max-height: 50rem;
+  }
+}
+
+/** top banner */
+.box-shadow-6 {
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0 6px;
+}
+
+/** Categories */
+.bg-img-h-red {
+  background: url("../images/bg-red.png") no-repeat center;
+  background-size: cover;
+}
+
+.bg-img-h-white {
+  background: url("../images/bgWhite.svg") no-repeat center;
+  background-size: cover;
+}
+
+.bg-img-h-red-sm {
+  background: url("../images/brushRed.svg") no-repeat center;
+  background-size: cover;
+}
+
+.bg-img-h-yellow-sm {
+  background: url("../images/brushYellow.svg") no-repeat center;
+  background-size: cover;
+}
+
+/**  news letter */
+.bg-img-button {
+  background: url("../images/brushButton.svg") no-repeat center;
+  background-size: contain;
+}
+
+.news-letter-main {
+  background: url("../images/bgYellow.png") no-repeat center;
+  background-size: cover;
+  min-height: 36rem;
+}
+
+.news-left {
+  height: 26rem;
+  border-radius: 2rem;
+}
+
+.news-right {
+  right: 0;
+  left: -4rem;
+  bottom: -3rem;
+}

@@ -1,0 +1,213 @@
+.content-area {
+    background-color: #F4F5F5;
+    padding-bottom: 3rem;
+}
+
+.product-cat-banner {
+    height: 32rem;
+
+    .bg-img-yellow {
+        margin-bottom: -9rem;
+    }
+
+
+}
+
+.bg-img-yellow {
+    background-image: url("../images/brushYellow2.svg");
+    min-height: 34rem;
+}
+
+.bg-img-dtgr {
+    background: url("../images/detailGr.png") no-repeat center;
+    background-size: contain;
+}
+
+.woocommerce div.product {
+    .image-outer {
+        .flex-active {
+            border: 1px solid $main;
+        }
+    }
+
+    div.images {
+        margin-bottom: 0.5rem;
+
+        &.woocommerce-product-gallery {
+            display: flex;
+            flex-direction: row-reverse;
+            width: 100%;
+
+            .flex-control-thumbs {
+                width: 8rem;
+                max-height: 44rem;
+                overflow-y: hidden;
+
+                @include scrollbars(3px, $color-casper, $color-white-smoke);
+
+                li {
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    height: 8rem;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .flex-viewport {
+                width: calc(100% - 10rem);
+                margin-left: 2rem;
+            }
+        }
+    }
+
+}
+
+.bd-radius-10 {
+    border-radius: 1rem;
+}
+
+.woocommerce div.product {
+    .onsale {
+        background: transparent;
+    }
+
+    .star-rating {
+        width: 12rem;
+        height: 2rem;
+
+        &::before {
+            content: '';
+            width: 100%;
+            height: 100%;
+            background: url("../images/peanutGrIcon.svg") no-repeat center;
+            background-size: contain;
+        }
+    }
+
+    span.price,
+    p.price {
+        color: $main;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+        font-weight: bold;
+
+        del {
+            font-size: 1.6rem;
+            margin-left: 1rem;
+        }
+
+
+    }
+
+    .posted_in {
+        a {
+            color: $yellowText;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .variation-select {
+        margin-bottom: 2rem;
+
+        input {
+            opacity: 0;
+            visibility: hidden;
+            position: absolute;
+        }
+
+        .ab-item {
+            position: relative;
+            border: 1px solid $main;
+            padding: 5px 15px;
+            margin-right: 1.5rem;
+            cursor: pointer;
+            font-weight: bold;
+
+            &.active {
+                background-color: $main;
+                color: #fff;
+            }
+        }
+
+        .variation {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.content-detail {
+    &::before {
+        content: '';
+        background-color: $main;
+        position: absolute;
+        top: 8rem;
+        bottom: 8rem;
+        left: 0;
+        right: 0;
+    }
+}
+
+.print-btn {
+    margin-left: 12rem;
+}
+
+@media print {
+
+    .print-btn,
+    .header-group,
+    .news-letter-main .news-right,
+    .ft-logo,
+    #bannerGlobal,
+    .instagram-main {
+        display: none !important;
+    }
+
+    .top-product {
+        display: inline-block !important;
+    }
+
+    .content-detail {
+        margin-top: 3rem !important;
+    }
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: $main;
+    border-bottom-width: 2px !important;
+}
+
+.table {
+    .border-bottom {
+        border-bottom: 2px solid $main !important;
+    }
+}
+
+.view-more-images {
+    top: 36rem;
+    left: 0;
+    width: 8rem;
+    height: 8rem;
+    z-index: 9;
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 1.2;
+}
+
+.logo-online {
+    height: 4.2rem;
+
+    img {
+        height: 100%;
+    }
+}

@@ -1,0 +1,25 @@
+.ab-banner {
+    .image-cover {
+        margin-bottom: -2rem;
+    }
+}
+
+.ab-list {
+    .image-cover {
+        max-height: 50rem;
+        min-height: 20rem;
+        text-align: center;
+
+        img {
+            max-width: 80%;
+        }
+    }
+}
+
+.ab-image {
+
+    figure,
+    iframe {
+        height: 35rem;
+    }
+}

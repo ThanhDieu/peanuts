@@ -1,0 +1,123 @@
+$black-222: #222222;
+$blue: #0d6efd;
+$pink: #ffadd7;
+$pink-dark: #d06d8c;
+$blue-dark: #114a58;
+$red: #b20000;
+$grey-777: #777;
+$grey-999: #999;
+$grey-25: #252525;
+$yellow: #fedb35;
+$yellow1: #efbf4d;
+$yellow2: #d69c12;
+
+$color-white-smoke: rgb(244, 245, 245);
+$color-casper: #b1bbc4;
+$color-black: rgb(0, 0, 0);
+
+$main: #750000;
+$grayBg: #d9d9d9;
+$grayText: #868686;
+$yellowBg: #f3dc8d;
+$yellowText: #eed588;
+$bgF4F5: #F4F5F5;
+/**
+color
+ */
+
+.color-main {
+  color: $main !important;
+}
+
+.color-gray {
+  color: $grayText !important;
+}
+
+.color-yellow {
+  color: $yellowText !important;
+}
+
+.color-red {
+  color: #750000b8 !important;
+}
+
+/**
+background-color
+ */
+.bg-main {
+  background: $main !important;
+}
+
+.bg-fa {
+  background: #fafafa none repeat scroll 0 0;
+}
+
+.bg-08 {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.bg-gray {
+  background: $grayBg !important;
+}
+
+.bg-yellow {
+  background: $yellowBg !important;
+}
+
+.bg-red-blue {
+  background: linear-gradient(#a20000, #231e55);
+}
+
+.bg-F4F5 {
+  background-color: $bgF4F5;
+}
+
+
+/**
+font
+ */
+
+.font-alove {
+  font-family: "ALoveOfThunder" !important;
+}
+
+.font-bd-thin {
+  font-family: "ALoveOfThunder" !important;
+}
+
+.font-bd-bold {
+  font-family: 'Amatic SC', cursive !important;
+  font-weight: 700;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.semi-bold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.black-bold {
+  font-weight: 900;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.fs-80 {
+  font-size: 8rem !important;
+}

@@ -1,0 +1,218 @@
+@media (max-width: 1399px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 1024px) {
+
+  .search-form {
+    display: block !important;
+
+    .btn-s-close {
+      display: none;
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+
+  .content-left,
+  .content-right {
+    .bold.fs-18 {
+      display: none;
+    }
+  }
+
+  .woocommerce ul.products,
+  .woocommerce-page ul.products {
+    &::before {
+      display: none;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+  }
+
+  .search-form .search-outer {
+    width: 50vw;
+  }
+
+  .hero-control-play {
+    bottom: 2.5rem;
+    left: calc(50% - 5rem);
+  }
+
+  .banner-slide.owl-carousel .owl-dots {
+    left: 50%;
+    bottom: 3rem;
+  }
+
+  .fs-40 {
+    font-size: 3.8rem;
+  }
+
+  .news-right {
+    position: relative !important;
+  }
+
+  .woocommerce ul.products li.product.wc-product-list,
+  .woocommerce-page ul.products li.product.wc-product-list {
+    .pd-img {
+      height: 18rem;
+    }
+
+    span.onsale {
+      width: 5rem;
+      height: 5rem;
+    }
+
+    .woocommerce-loop-product__title {
+      font-size: 2.5rem !important;
+    }
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {}
+
+@media (min-width: 992px) and (max-width: 1024px) {}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+  .woocommerce ul.products,
+  .woocommerce-page ul.products {
+
+    margin-left: -1.5%;
+    margin-right: -1.5%;
+
+    li.product {
+      width: 30%;
+      margin-right: 0;
+      margin-left: 1.5%;
+      margin-right: 1.5%;
+
+    }
+  }
+}
+
+@media (max-width: 767px) {
+
+  .logo-main {
+    left: 1rem;
+    height: 8rem;
+  }
+
+  .menu-menu.active .logo-main {
+    height: 6rem;
+  }
+
+  .video-modal .modal-dialog {
+    max-width: 100%;
+  }
+
+  .video-modal iframe {
+    max-height: 30rem;
+  }
+
+  .woocommerce ul.products,
+  .woocommerce-page ul.products {
+    justify-content: space-between;
+  }
+
+  .top-products {
+    .content-right {
+      width: 100%;
+      justify-content: space-between;
+    }
+  }
+
+  .woocommerce div.product div.images.woocommerce-product-gallery {
+    flex-wrap: wrap;
+
+    .flex-viewport {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .flex-control-thumbs {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      height: 8rem;
+      overflow-y: hidden;
+      margin-top: 1rem;
+
+      li {
+        width: 19%;
+        margin-left: 1%;
+      }
+    }
+  }
+
+  .view-more-images {
+    top: unset;
+    left: unset;
+    width: 19%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .bot-detail {
+    .w-9 {
+      width: 100%;
+    }
+  }
+
+  .print-btn {
+    margin-left: 0;
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    padding-top: 1rem;
+  }
+
+  .sitemap-outer {
+    .w-33 {
+      width: 50%;
+    }
+  }
+
+  .item-post {
+
+    .w-33,
+    .w-66 {
+      width: 100%;
+    }
+  }
+
+  .image-outer {
+    margin-top: 1rem;
+  }
+
+  .woocommerce ul.products li.product.wc-product-list,
+  .woocommerce-page ul.products li.product.wc-product-list {
+    .pd-img {
+      height: 15rem;
+    }
+
+
+  }
+
+  .product-cat-banner .bg-img-yellow {
+    padding: 2rem !important;
+
+    h2 {
+      font-size: 4rem;
+    }
+  }
+
+}
+
+@media (max-width: 570px) {}
+
+@media (max-width: 414px) {}

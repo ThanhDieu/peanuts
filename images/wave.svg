@@ -1,0 +1,13 @@
+<svg id="visual" viewBox="0 0 1920 150" width="1920" height="150"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" >
+
+  <filter id='myfilters' color-interpolation-filters="sRGB">
+    <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.5"/>
+  </filter>
+
+  <g filter="url(#myfilters)">
+    <path d="M0 4L45.7 27.2C91.3 50.3 182.7 96.7 274.2 110.2C365.7 123.7 457.3 104.3 548.8 91.7C640.3 79 731.7 73 823 81.3C914.3 89.7 1005.7 112.3 1097 119.3C1188.3 126.3 1279.7 117.7 1371.2 107.2C1462.7 96.7 1554.3 84.3 1645.8 71.5C1737.3 58.7 1828.7 45.3 1874.3 38.7L1920 32L1920 151L1874.3 151C1828.7 151 1737.3 151 1645.8 151C1554.3 151 1462.7 151 1371.2 151C1279.7 151 1188.3 151 1097 151C1005.7 151 914.3 151 823 151C731.7 151 640.3 151 548.8 151C457.3 151 365.7 151 274.2 151C182.7 151 91.3 151 45.7 151L0 151Z" fill="#ffffff" stroke-linecap="round" stroke-linejoin="miter">
+</path>
+  </g>
+
+
+</svg>

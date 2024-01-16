@@ -1,0 +1,97 @@
+.contact-page {
+    .button {
+        font-size: 1.8rem !important;
+    }
+}
+
+.contact-info {
+    border-radius: 2rem;
+}
+
+.bg-img-button-white {
+    background: url("../images/brushButtonWhite.svg") no-repeat center;
+    background-size: contain;
+}
+
+.bg-img-button-red {
+    background: url("../images/brushButtonRed.svg") no-repeat center;
+    background-size: contain;
+}
+
+
+.bg-img-peanut {
+    background: url("../images/peanutsBg.svg") no-repeat center;
+    background-size: contain;
+}
+
+#contact {
+
+    // .gform_wrapper ul.gform_fields li.gfield select {
+    //   height: 4.8rem;
+    // }
+    .gform_wrapper ul.gform_fields li.gfield {
+        &:nth-child(2n) {
+            input {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+
+        &:nth-child(2n + 1) {
+            input {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+
+    }
+
+    .gform_wrapper ul.gform_fields li.gfield input,
+    .gform_wrapper ul.gform_fields li.gfield textarea,
+    .gform_wrapper ul.gform_fields li.gfield select {
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #707070 !important;
+        border-radius: 2rem;
+        color: #999;
+
+        &::placeholder {
+            color: #777;
+        }
+    }
+
+    .gform_confirmation_message {
+        color: #999;
+        text-align: center;
+    }
+
+    .gform_footer {
+        margin-top: 0 !important;
+        float: right;
+
+
+        input[type="submit"] {
+            background-image: url(../images/brushButtonRed.svg) !important;
+            background-color: transparent;
+            height: 5rem;
+            border-radius: 5px;
+            padding: 0;
+            color: #f3dc8d;
+            background-size: cover;
+            padding-top: 1rem;
+            background-repeat: no-repeat;
+            font-size: 2rem !important;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.widget-visible {
+    clip-path: polygon(0 0, 0 0, 0 0, 0 0) !important;
+
+    &.hidden {
+        clip-path: unset !important;
+    }
+}

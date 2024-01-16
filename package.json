@@ -1,0 +1,33 @@
+{
+  "name": "laravel-mix-pack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ThanhDieu/laravel-mix-pack.git",
+  "author": "dieu <dieu@nvpcloud.com>",
+  "license": "MIT",
+  "scripts": {
+    "development": "mix",
+    "watch": "mix watch",
+    "start": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "prod": "mix --production"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.4",
+    "jquery-lazy": "^1.7.11",
+    "owl.carousel": "^2.3.4"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.13",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "cross-env": "^7.0.3",
+    "laravel-mix": "^6.0.49",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.60.0",
+    "sass-loader": "^13.2.1",
+    "vue-template-compiler": "^2.7.14"
+  }
+}
