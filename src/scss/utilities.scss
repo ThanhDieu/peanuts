@@ -24,7 +24,7 @@ $breakpoints: (
       }
 
       .fs-#{$spacing} {
-        font-size: #{$spacing/10}rem;
+        font-size: calc($spacing / 10)rem
       }
     }
 
@@ -51,7 +51,7 @@ $breakpoints: (
   &::-webkit-scrollbar-thumb {
     background-color: $foreground-color;
     transition: background-color 0.3s ease-in-out;
-    border-radius: rem(5);
+    // border-radius: rem(5);
 
     &:hover {
       background-color: mix($foreground-color, $color-black, 70%);

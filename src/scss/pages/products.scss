@@ -170,8 +170,13 @@
     .news-letter-main .news-right,
     .ft-logo,
     #bannerGlobal,
+    #localizationModal,
     .instagram-main {
         display: none !important;
+    }
+
+    .pt-8rem {
+        padding-top: 10px;
     }
 
     .top-product {

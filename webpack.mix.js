@@ -4,7 +4,11 @@ const mix = require("laravel-mix");
 mix
   .js(["./src/js/bootstrap.js"], "./js/1vendor.min.js")
   .sourceMaps(false, "source-map");
-
+mix.webpackConfig({
+  stats: {
+    children: true,
+  },
+});
 // vendor css
 mix
   .styles(
