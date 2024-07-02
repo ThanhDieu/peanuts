@@ -39,10 +39,15 @@ $term = get_queried_object();
 $pdcBanner = get_field('pdc_banner', $term);
 $dfBanner = THEME_URL . '/images/25.jpg';
 $pdTitle = get_field('pdc_title', $term);
+
+if(is_shop()){
+    $shop_page_id = wc_get_page_id('shop');
+    $featured_image_url = get_the_post_thumbnail_url($shop_page_id);
+}
 ?>
 
 <section class="product-cat-banner bg-img mt-5 d-flex align-items-lg-end"
-    style="background-image: url('<?php echo !empty($pdcBanner) ? $pdcBanner : $dfBanner; ?>');">
+    style="background-image: url('<?php echo !empty($pdcBanner) ? $pdcBanner : (isset($shop_page_id) ? $featured_image_url : $dfBanner); ?>');">
     <?php if ($pdTitle) : ?>
     <div class="container">
         <div class="row">
